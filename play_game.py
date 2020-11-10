@@ -34,7 +34,6 @@ def play(rooms):
     # The things the player has collected.
     stuff = ['Cell Phone; no signal or battery...']
     #cat_place = "kitchen"
-    cat_place = "kitchen"
     visited = {}
 
     while True:
@@ -60,7 +59,7 @@ def play(rooms):
         if here["items"] == []:
             print(" ")
         else:
-            print(here["items"])
+            print("The item available is", here["items"])
         # e.g., There is a Mansion Key.
 
         # Is this a game-over?
