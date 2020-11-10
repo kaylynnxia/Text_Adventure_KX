@@ -56,10 +56,12 @@ def play(rooms):
             
         
         # TODO: print any available items in the room...
-        if here["items"] == []:
+         if here["items"] == []:
             print(" ")
         else:
-            print("The item available is", here["items"])
+            print("There is a: ")
+            for item in here["items"]:
+                print(item)
         # e.g., There is a Mansion Key.
 
         # Is this a game-over?
